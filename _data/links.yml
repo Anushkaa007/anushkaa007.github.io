@@ -1,9 +1,8 @@
-# Extra profiles shown under your name. Remove the leading # and fill in the URL.
-# - name: Google Scholar
-#   url: "https://scholar.google.com/citations?user=XXXX"
-# - name: ORCID
-#   url: "https://orcid.org/0000-0000-0000-0000"
-# - name: LinkedIn
-#   url: "https://www.linkedin.com/in/XXXX"
+# Extra profiles (shown on Home and Contact)
+- name: Google Scholar
+  url: "https://scholar.google.com/citations?user=6G8ja0sAAAAJ&hl=en"
+- name: LinkedIn
+  url: "https://www.linkedin.com/in/anushkas01/"
+# Add a CV link only after you have a version you are happy to make public:
 # - name: CV
 #   url: "/assets/cv.pdf"

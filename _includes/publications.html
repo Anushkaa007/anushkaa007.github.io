@@ -1,0 +1,11 @@
+{% for p in site.data.publications %}
+<div class="row">
+<div class="when">{{ p.year }}</div>
+<div class="what">
+<strong>{{ p.title }}</strong><br>
+<span class="meta">{{ p.authors }}</span><br>
+<span class="meta"><em>{{ p.venue }}</em>{% if p.note %} &middot; {{ p.note }}{% endif %}</span><br>
+<span class="meta">{% if p.doi %}<a href="https://doi.org/{{ p.doi }}">DOI</a>{% endif %}{% if p.pubmed %} &middot; <a href="{{ p.pubmed }}">PubMed</a>{% endif %}</span>
+</div>
+</div>
+{% endfor %}

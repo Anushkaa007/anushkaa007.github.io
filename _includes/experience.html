@@ -1,0 +1,10 @@
+{% for e in site.data.experience %}
+<div class="row">
+<div class="when">{{ e.when }}</div>
+<div class="what">
+<strong>{{ e.role }}</strong><br>
+<span class="meta">{{ e.org }}</span>
+<p>{{ e.text }}</p>
+</div>
+</div>
+{% endfor %}
