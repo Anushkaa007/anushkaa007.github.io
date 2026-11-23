@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'en' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <main class="page">
+    <header>
+      <h1>{{ site.title }}</h1>
+      <p class="tagline">{{ site.description }}</p>
+      <nav class="links">
+        {% if site.email %}<a href="mailto:{{ site.email }}">Email</a>{% endif %}
+        <a href="https://github.com/{{ site.github_username }}">GitHub</a>
+        {% for l in site.data.links %}<a href="{{ l.url }}">{{ l.name }}</a>{% endfor %}
+      </nav>
+    </header>
+    {{ content }}
+    <footer>&copy; {{ site.time | date: "%Y" }} {{ site.title }}</footer>
+  </main>
+</body>
+</html>

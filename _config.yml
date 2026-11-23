@@ -1,0 +1,11 @@
+title: Anushka Sarkar
+description: Systems and computational neuroscience
+theme: jekyll-theme-minimal
+lang: en
+
+# Change these two lines if your GitHub username or email changes
+github_username: Anushkaa007
+email: anushka.sarkar@donders.ru.nl
+
+exclude:
+  - README.md
