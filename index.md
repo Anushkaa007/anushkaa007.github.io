@@ -14,8 +14,6 @@ I am a neuroscience researcher working on systems and computational approaches t
 **Research Intern**, Neural Data Lab<br>
 <span class="meta">University of Nottingham · 2026 – present</span>
 
-**Project Associate**, Plasticity Lab<br>
-<span class="meta">TCG-CREST, India · 2026 – present</span>
 
 ## Education
 
