@@ -1,0 +1,12 @@
+{% assign url = include.w.url %}
+{% if include.w.repo %}{% capture url %}https://github.com/{{ site.github_username }}/{{ include.w.repo }}{% endcapture %}{% endif %}
+{% assign img = false %}
+{% if include.w.image %}{% assign img = site.static_files | where: "path", include.w.image | first %}{% endif %}
+<div class="entry{% if img %} has-img{% endif %}">
+{% if img %}<div class="teaser"><img src="{{ include.w.image | relative_url }}" alt="{{ include.w.title }}" loading="lazy"></div>{% endif %}
+<div class="entry-body">
+<div class="entry-title">{% if url %}<a href="{{ url }}">{{ include.w.title }}</a>{% else %}{{ include.w.title }}{% endif %}</div>
+<div class="desc">{{ include.w.text }}</div>
+{% if include.w.meta %}<div class="venue">{{ include.w.meta }}</div>{% endif %}
+</div>
+</div>

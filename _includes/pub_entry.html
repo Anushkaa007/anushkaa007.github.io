@@ -1,0 +1,15 @@
+{% assign img = false %}
+{% if include.p.teaser %}{% assign img = site.static_files | where: "path", include.p.teaser | first %}{% endif %}
+<div class="entry{% if img %} has-img{% endif %}">
+{% if img %}<div class="teaser"><img src="{{ include.p.teaser | relative_url }}" alt="{{ include.p.title }}" loading="lazy"></div>{% endif %}
+<div class="entry-body">
+<div class="entry-title">{{ include.p.title }}</div>
+<div class="authors">{{ include.p.authors }}</div>
+<div class="venue"><em>{{ include.p.venue }}</em> {{ include.p.year }}{% if include.p.note %} &middot; {{ include.p.note }}{% endif %}</div>
+<div class="btns">
+{% if include.p.doi %}<a class="btn" href="https://doi.org/{{ include.p.doi }}">DOI</a>{% endif %}
+{% if include.p.pubmed %}<a class="btn" href="{{ include.p.pubmed }}">PubMed</a>{% endif %}
+{% if include.p.repo %}<a class="btn" href="https://github.com/{{ site.github_username }}/{{ include.p.repo }}">Code</a>{% endif %}
+</div>
+</div>
+</div>

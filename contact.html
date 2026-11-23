@@ -4,11 +4,8 @@ title: Contact
 permalink: /contact/
 ---
 <p>For collaborations or research discussions, feel free to reach out.</p>
-<div class="row">
-<div class="when">Email</div>
-<div class="what"><a href="mailto:{{ site.email }}">{{ site.email }}</a>{% if site.email_institutional %}<br><a href="mailto:{{ site.email_institutional }}">{{ site.email_institutional }}</a> <span class="meta">(institutional)</span>{% endif %}</div>
-</div>
-<div class="row">
-<div class="when">Elsewhere</div>
-<div class="what"><a href="https://github.com/{{ site.github_username }}">GitHub</a>{% for l in site.data.links %}<br><a href="{{ l.url }}">{{ l.name }}</a>{% endfor %}</div>
-</div>
+{% if site.email_institutional %}
+<div class="row"><div class="when">currently</div><div class="what"><a href="mailto:{{ site.email_institutional }}">{{ site.email_institutional }}</a></div></div>
+{% endif %}
+<div class="row"><div class="when">always</div><div class="what"><a href="mailto:{{ site.email }}">{{ site.email }}</a></div></div>
+<div class="row"><div class="when">elsewhere</div><div class="what"><a href="https://github.com/{{ site.github_username }}">github</a>{% for l in site.data.links %} // <a href="{{ l.url }}">{{ l.name | downcase }}</a>{% endfor %}</div></div>

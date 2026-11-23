@@ -1,8 +1,10 @@
-- name: Work
+- name: about
+  url: /
+- name: work
   url: /work/
-- name: Experience
+- name: experience
   url: /experience/
-- name: Publications
+- name: publications
   url: /publications/
-- name: Contact
+- name: contact
   url: /contact/

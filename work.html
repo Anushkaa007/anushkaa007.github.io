@@ -3,4 +3,4 @@ layout: default
 title: Work
 permalink: /work/
 ---
-{% include work.html %}
+{% for item in site.data.work %}{% include work_entry.html w=item %}{% endfor %}

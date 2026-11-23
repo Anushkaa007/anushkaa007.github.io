@@ -1,5 +1,8 @@
 title: Anushka Sarkar
-description: Systems and computational neuroscience
+first_name: Anushka
+last_name: Sarkar
+subtitle: "Neuroscience Researcher | Donders Institute | University of Nottingham"
+description: "Systems and computational neuroscience"
 theme: jekyll-theme-minimal
 lang: en
 
@@ -7,6 +10,16 @@ lang: en
 github_username: Anushkaa007
 email: anushka01sarkar@gmail.com
 email_institutional: anushka.sarkar@donders.ru.nl
+
+# Optional italic caption under your photo, e.g. "Pictured: me, ..." (leave empty for none)
+photo_caption: ""
+
+# Fonts: to try another style, change these four lines (see the presets I sent)
+fonts:
+  url: "https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,700&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap"
+  display: "'Fraunces', Georgia, serif"
+  body: "'Inter', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif"
+  mono: "'Space Mono', ui-monospace, Menlo, Consolas, monospace"
 
 exclude:
   - README.md

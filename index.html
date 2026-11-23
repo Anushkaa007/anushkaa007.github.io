@@ -4,9 +4,12 @@ hero: true
 ---
 <p>I am a computational and systems neuroscientist at the Donders Institute, Radboud University, studying how aberrant network activity and circuit hyperexcitability shape memory consolidation, and how disruptions in these dynamics may be a subclinical signature of Alzheimer's disease. I also work on neural population dynamics with the Neural Data Lab at the University of Nottingham.</p>
 <p>My Master's thesis at JNCASR, with K. S. Narayan, combined quantitative imaging, electrophysiology and computational modeling to ask how electroactive substrate geometry shapes neuronal network formation.</p>
-<p class="meta">Systems neuroscience &middot; Memory networks &middot; Dementia &middot; Neurotechnology</p>
+<p>For collaborations or research discussions, feel free to reach out on <a href="mailto:{{ site.email }}">email</a>! <em>Happy sciencing!</em></p>
+<p class="interests">Systems neuroscience // Memory networks // Dementia // Neurotechnology</p>
 
-<h2>News</h2>
+<h2>news</h2>
 {% include news.html %}
 
-<p><a href="{{ '/work/' | relative_url }}">See my work &rarr;</a></p>
+<h2>selected publications</h2>
+{% for pub in site.data.publications %}{% if pub.selected %}{% include pub_entry.html p=pub %}{% endif %}{% endfor %}
+<p><a href="{{ '/publications/' | relative_url }}">all publications &rarr;</a></p>
