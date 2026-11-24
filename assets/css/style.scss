@@ -60,3 +60,9 @@ p { margin: 0 0 1rem; }
 .bullets { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.93rem; }
 .bullets li { margin: 0 0 0.35rem; }
 .what .lead { margin: 0.4rem 0 0; font-size: 0.93rem; }
+.dates { font: 700 0.78rem $mono; color: $accent; margin-top: 0.1rem; }
+.row.wide { grid-template-columns: 13rem 1fr; }
+@media (max-width: 560px) { .row.wide { grid-template-columns: 1fr; } }
+.fact { border-left: 3px solid $accent; padding: 0.4rem 0 0.4rem 1rem; margin: 0 0 1rem; font-size: 1.02rem; }
+button.btn { background: transparent; color: $accent; cursor: pointer; }
+button.btn:hover { background: $accent; color: #ffffff; }

@@ -1,11 +1,17 @@
 {% for e in site.data.experience %}
-<div class="row">
-<div class="when">{{ e.when }}</div>
-<div class="what">
-<strong>{{ e.role }}</strong><br>
-<span class="meta">{{ e.org }}</span>
-{% if e.text %}<p class="lead">{{ e.text }}</p>{% endif %}
-{% if e.bullets %}<ul class="bullets">{% for b in e.bullets %}<li>{{ b }}</li>{% endfor %}</ul>{% endif %}
+{% assign img = false %}
+{% if e.image %}{% assign img = site.static_files | where: "path", e.image | first %}{% endif %}
+<div class="entry{% if img %} has-img{% endif %}">
+{% if img %}<div class="teaser"><img src="{{ e.image | relative_url }}" alt="{{ e.role }}" loading="lazy"></div>{% endif %}
+<div class="entry-body">
+<div class="entry-title">{{ e.role }}</div>
+<div class="dates">{{ e.when }}</div>
+<div class="venue">{{ e.org }}</div>
+<ul class="bullets">{% for b in e.bullets %}<li>{{ b }}</li>{% endfor %}</ul>
+<div class="btns">
+{% if e.doi %}<a class="btn" href="https://doi.org/{{ e.doi }}">Paper</a>{% endif %}
+{% if e.repo %}<a class="btn" href="https://github.com/{{ site.github_username }}/{{ e.repo }}">Code</a>{% endif %}
+</div>
 </div>
 </div>
 {% endfor %}

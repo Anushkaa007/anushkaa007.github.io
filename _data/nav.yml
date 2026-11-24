@@ -1,10 +1,12 @@
 - name: about
   url: /
-- name: work
-  url: /work/
-- name: experience
-  url: /experience/
+- name: research
+  url: /research/
 - name: publications
   url: /publications/
+- name: cv
+  url: /cv/
+- name: scicomm
+  url: /scicomm/
 - name: contact
   url: /contact/

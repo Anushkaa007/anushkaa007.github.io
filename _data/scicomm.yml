@@ -1,0 +1,13 @@
+# Add talks, posters, explainers, outreach events, podcasts or blog posts here.
+# Fields: when, title, org, text (optional), url (optional)
+- when: "2026"
+  title: "Fellow &amp; Ambassador"
+  org: "Thinking About Thinking Inc."
+- when: "Jul 2025 &ndash; Aug 2025"
+  title: "Machine Learning Research Mentor / Lead (REYES STEM)"
+  org: "University of California, Berkeley, Remote"
+  text: "Led a 4-person research team to architect a machine learning classification pipeline in Python, decoding covert cognitive states from high-frequency oculomotor (micro-saccade) and pupillometry time-series features."
+- when: "2025"
+  title: "Graduate Teaching Assistant Technical Mentor"
+  org: "JNCASR"
+  text: "Mentored undergraduate interns in Python data workflows, automated image quantification, and time-series analysis; graded and debugged student analysis scripts."

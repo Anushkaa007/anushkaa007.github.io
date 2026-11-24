@@ -1,0 +1,25 @@
+---
+layout: default
+title: Science communication
+permalink: /scicomm/
+---
+<p>Outreach, mentoring and explainers.</p>
+
+<h2>did you know?</h2>
+<div class="fact" id="fact"></div>
+<button class="btn" id="more" type="button">another one</button>
+<script>
+(function () {
+  var facts = {{ site.data.facts | jsonify }};
+  var el = document.getElementById('fact');
+  var i = Math.floor(Math.random() * facts.length);
+  function show() { el.textContent = facts[i]; }
+  document.getElementById('more').addEventListener('click', function () { i = (i + 1) % facts.length; show(); });
+  show();
+})();
+</script>
+
+<h2>outreach &amp; mentoring</h2>
+{% for s in site.data.scicomm %}
+<div class="row"><div class="when">{{ s.when }}</div><div class="what"><strong>{% if s.url %}<a href="{{ s.url }}">{{ s.title }}</a>{% else %}{{ s.title }}{% endif %}</strong><br><span class="meta">{{ s.org }}</span>{% if s.text %}<p class="lead">{{ s.text }}</p>{% endif %}</div></div>
+{% endfor %}
