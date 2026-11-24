@@ -1,13 +1,12 @@
 # Add talks, posters, explainers, outreach events, podcasts or blog posts here.
 # Fields: when, title, org, text (optional), url (optional)
 - when: "Oct 2026 &ndash; Oct 2027"
-  title: "Fellow &amp; Ambassador"
+  title: "Fellow and Ambassador"
   org: "Thinking About Thinking Inc."
-- when: "Jul 2025 &ndash; Aug 2025"
+- when: "Jul &ndash; Aug 2025"
   title: "REYES STEM Research Mentor / Lead"
   org: "University of California, Berkeley, Remote"
   text: "Led a 4-person team to develop a Python machine-learning pipeline decoding covert memory states from high-frequency micro-saccade and pupil dynamics time-series."
-- when: "May 2025 &ndash; Aug 2025"
+- when: "May &ndash; Aug 2025"
   title: "Graduate Teaching Assistant"
-  org: "JNCASR"
-  text: "Mentoring undergraduates in image analysis, MEA workflows, and cell culture."
+  org: "JNCASR (mentoring undergraduates in image analysis, MEA workflows, and cell culture)"
