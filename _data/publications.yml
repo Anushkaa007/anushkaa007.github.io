@@ -5,7 +5,7 @@
   note: "First Author: Python stochastic modeling &amp; experimental validation"
   doi: "10.1021/acsabm.6c00477"
   selected: true
-  teaser: "/assets/img/neuronal-substrates.png"
+  teaser: "/assets/img/neuronal-substrates.svg"
 - year: "2026"
   title: "Additive effects of sleep loss, psychological distress and physical inactivity on cognitive failures in young adults"
   authors: "<strong>Sarkar, A.</strong>"
@@ -20,7 +20,7 @@
   pubmed: "https://pubmed.ncbi.nlm.nih.gov/40876617/"
   repo: "burst-detection"
   selected: true
-  teaser: "/assets/img/retinal-waves.png"
+  teaser: "/assets/img/retinal-waves.svg"
 - year: "2023"
   title: "SARS-CoV-2 severity classification from plasma samples using confocal Raman spectroscopy"
   authors: "Banerjee, A., Halder, A., Jadhav, P., <strong>Sarkar, A.</strong>, Hole, A., Shastri, J. S., Agrawal, S., Chilakapati, M. K., &amp; Srivastava, S."

@@ -1,8 +1,8 @@
 title: Anushka Sarkar
 first_name: Anushka
 last_name: Sarkar
-subtitle: "Computational Scientist &amp; Quantitative Biology Researcher"
-description: "Systems and computational neuroscience"
+subtitle: "Systems Neuroscientist"
+description: "Systems neuroscience: experimental and computational"
 theme: jekyll-theme-minimal
 lang: en
 
@@ -23,3 +23,4 @@ fonts:
 
 exclude:
   - README.md
+  - tools

@@ -3,23 +3,30 @@ layout: default
 title: Science communication
 permalink: /scicomm/
 ---
-<p>Outreach, mentoring and explainers.</p>
+<figure class="figure banner"><img src="{{ '/assets/img/scicomm.svg' | relative_url }}" alt="Abstract network of connected neurons"></figure>
+<p>Science communication and entrepreneurship in neuroscience and biomedicine.</p>
+
+<h2>ventures &amp; communities</h2>
+{% for v in site.data.ventures %}
+<div class="row"><div class="when">{{ v.when }}</div><div class="what"><strong>{% if v.url %}<a href="{{ v.url }}">{{ v.title }}</a>{% else %}{{ v.title }}{% endif %}</strong><br><span class="meta">{{ v.kind }}{% if v.role %} &middot; {{ v.role }}{% endif %}</span>{% if v.text %}<p class="lead">{{ v.text }}</p>{% endif %}</div></div>
+{% endfor %}
 
 <h2>did you know?</h2>
-<div class="fact" id="fact"></div>
+<div class="fact"><div id="fact"></div><div class="fact-src" id="factsrc"></div></div>
 <button class="btn" id="more" type="button">another one</button>
 <script>
 (function () {
   var facts = {{ site.data.facts | jsonify }};
   var el = document.getElementById('fact');
+  var src = document.getElementById('factsrc');
   var i = Math.floor(Math.random() * facts.length);
-  function show() { el.textContent = facts[i]; }
+  function show() { el.textContent = facts[i].text; src.textContent = facts[i].source; }
   document.getElementById('more').addEventListener('click', function () { i = (i + 1) % facts.length; show(); });
   show();
 })();
 </script>
 
-<h2>outreach &amp; mentoring</h2>
+<h2>mentoring</h2>
 {% for s in site.data.scicomm %}
 <div class="row"><div class="when">{{ s.when }}</div><div class="what"><strong>{% if s.url %}<a href="{{ s.url }}">{{ s.title }}</a>{% else %}{{ s.title }}{% endif %}</strong><br><span class="meta">{{ s.org }}</span>{% if s.text %}<p class="lead">{{ s.text }}</p>{% endif %}</div></div>
 {% endfor %}

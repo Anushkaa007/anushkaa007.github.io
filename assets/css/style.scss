@@ -66,3 +66,8 @@ p { margin: 0 0 1rem; }
 .fact { border-left: 3px solid $accent; padding: 0.4rem 0 0.4rem 1rem; margin: 0 0 1rem; font-size: 1.02rem; }
 button.btn { background: transparent; color: $accent; cursor: pointer; }
 button.btn:hover { background: $accent; color: #ffffff; }
+.figure { margin: 1.8rem 0; }
+.figure img { display: block; width: 100%; border: 1px solid $line; border-radius: 6px; }
+.figure.banner img { border: 0; }
+.figcap { font: italic 0.8rem/1.4 $body; color: $muted; text-align: center; margin-top: 0.5rem; }
+.fact-src { font: 0.75rem $mono; color: $muted; margin-top: 0.5rem; }
