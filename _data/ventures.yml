@@ -1,8 +1,16 @@
-# Add "when", "url" and "text" to any entry and they appear automatically.
+# logo: put the organisation's logo at this path (PNG, SVG or JPG). Until the file exists,
+# the site shows a monogram tile (mark) instead.
 - title: "Women in Neuroscience"
   kind: "Science communication &amp; entrepreneurship"
+  role: "Grants Officer"
+  mark: "WiN"
+  logo: "/assets/img/logos/women-in-neuroscience.png"
 - title: "Knowing Neurons"
   kind: "Science communication &amp; entrepreneurship"
-- title: "Biomedzone"
+  mark: "KN"
+  logo: "/assets/img/logos/knowing-neurons.png"
+- title: "BioMedizone"
   kind: "Entrepreneurship"
   role: "Trustee and Advisory Board Member"
+  mark: "BM"
+  logo: "/assets/img/logos/biomedizone.png"

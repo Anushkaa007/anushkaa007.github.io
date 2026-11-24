@@ -1,5 +1,7 @@
+# One entry per item, exactly as on the CV. Two events in the same month are listed separately.
+# TODO: replace each bare year with "Mon YYYY" (for example "Mar 2026") from the CV.
 - when: "2026"
-  text: "Joined Biomedzone as Trustee and Advisory Board Member."
+  text: "Joined BioMedizone as Trustee and Advisory Board Member."
 - when: "2026"
   text: "Paper published: <em>Electrically Contrasting Periodic Polymer Interfaces Guide Neuronal Growth</em>, <em>ACS Applied Bio Materials</em>."
 - when: "2026"
@@ -9,4 +11,6 @@
 - when: "2025"
   text: "Women in Memory Research Award, GEM Bochum."
 - when: "2025"
-  text: "IBRO Speaker Support Award; Cambridge Neuroworks Blue Sky Fellowship."
+  text: "IBRO Speaker Support Award."
+- when: "2025"
+  text: "Cambridge Neuroworks Blue Sky Fellowship."

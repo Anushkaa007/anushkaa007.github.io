@@ -250,26 +250,6 @@ def fig_retinal_waves():
     save('retinal-waves.svg', wrap(W, H, ''.join(body), 'Schematic of a retinal wave front crossing a multi-electrode array'))
 
 
-def fig_toolkit():
-    W, H = 640, 300
-    body = [
-        f'<circle cx="250" cy="150" r="104" fill="{TEAL}" fill-opacity="0.10" stroke="{TEAL}" stroke-width="1.4"/>',
-        f'<circle cx="390" cy="150" r="104" fill="{GREY}" fill-opacity="0.14" stroke="{GREY}" stroke-width="1.4"/>',
-        label(200, 62, 'experimental', INK, 13, 'middle', 'bold'),
-        label(440, 62, 'computational', INK, 13, 'middle', 'bold'),
-        label(190, 140, 'electrophysiology', INK, 11, 'middle'),
-        label(190, 160, 'long-term recordings', INK, 11, 'middle'),
-        label(190, 180, 'imaging', INK, 11, 'middle'),
-        label(452, 140, 'dynamical systems', INK, 11, 'middle'),
-        label(452, 160, 'signal processing', INK, 11, 'middle'),
-        label(452, 180, 'machine learning', INK, 11, 'middle'),
-        label(320, 146, 'systems', TEAL, 13, 'middle', 'bold'),
-        label(320, 164, 'neuroscience', TEAL, 13, 'middle', 'bold'),
-        label(W - 14, H - 10, 'a hybrid toolkit', GREY, 10, 'end', italic=True),
-    ]
-    save('toolkit.svg', wrap(W, H, ''.join(body), 'Venn diagram: experimental and computational approaches meet in systems neuroscience'))
-
-
 def fig_scicomm():
     W, H = 640, 150
     rnd = random.Random(21)
@@ -298,5 +278,4 @@ if __name__ == '__main__':
     fig_silent_recall()
     fig_neuronal_substrates()
     fig_retinal_waves()
-    fig_toolkit()
     fig_scicomm()

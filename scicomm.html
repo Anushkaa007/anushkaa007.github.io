@@ -8,7 +8,12 @@ permalink: /scicomm/
 
 <h2>ventures &amp; communities</h2>
 {% for v in site.data.ventures %}
-<div class="row"><div class="when">{{ v.when }}</div><div class="what"><strong>{% if v.url %}<a href="{{ v.url }}">{{ v.title }}</a>{% else %}{{ v.title }}{% endif %}</strong><br><span class="meta">{{ v.kind }}{% if v.role %} &middot; {{ v.role }}{% endif %}</span>{% if v.text %}<p class="lead">{{ v.text }}</p>{% endif %}</div></div>
+{% assign logo = false %}
+{% if v.logo %}{% assign logo = site.static_files | where: "path", v.logo | first %}{% endif %}
+<div class="venture">
+<div class="logo">{% if logo %}<img src="{{ v.logo | relative_url }}" alt="{{ v.title }} logo">{% else %}<span class="mark" aria-hidden="true">{{ v.mark }}</span>{% endif %}</div>
+<div class="what"><strong>{% if v.url %}<a href="{{ v.url }}">{{ v.title }}</a>{% else %}{{ v.title }}{% endif %}</strong>{% if v.when %} <span class="when-inline">{{ v.when }}</span>{% endif %}<br><span class="meta">{{ v.kind }}</span>{% if v.role %}<div class="role">{{ v.role }}</div>{% endif %}{% if v.text %}<p class="lead">{{ v.text }}</p>{% endif %}</div>
+</div>
 {% endfor %}
 
 <h2>did you know?</h2>
