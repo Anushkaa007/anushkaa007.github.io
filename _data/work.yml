@@ -1,4 +1,4 @@
-# Work cards. "image" is optional: put the file in assets/img/ and it appears automatically.
+# Optional images: put the file in assets/img/ with the exact name below.
 - title: "Hyperexcitability and memory consolidation"
   text: "How aberrant network activity and circuit hyperexcitability disrupt hippocampal-cortical coordination and memory consolidation, and whether these disruptions are a subclinical signature of Alzheimer's disease. Long-term Neuropixels recordings with pharmacological interventions."
   meta: "Donders Institute &middot; ongoing"
@@ -23,7 +23,7 @@
   image: "/assets/img/log-isi.png"
 
 - title: "Neural population dynamics"
-  text: "A modular state-space framework for manifold geometry and attractor stability in population recordings, with parallelized permutation surrogate testing."
+  text: "A modular state-space framework (PCA, jPCA, subspace alignment, RQA, linear dynamical systems) for manifold geometry and attractor stability in population recordings, with parallelized permutation surrogate testing."
   meta: "Neural Data Lab, Nottingham"
   image: "/assets/img/state-space.png"
 
@@ -31,3 +31,14 @@
   text: "Coupled dynamical-systems models of how local periodic rules propagate into aperiodic networks to give macroscopic stability and memory-like states."
   meta: "Manuscript submitted"
   image: "/assets/img/memory-states.png"
+
+- title: "Decoding silent memory recall"
+  text: "A machine-learning pipeline that classifies covert recall states from micro-saccade, eye and brow dynamics and pupillometry, built and led with a four-person team."
+  meta: "UC Berkeley REYES STEM, 2025"
+  image: "/assets/img/silent-recall.png"
+
+- title: "Raman spectroscopy classification of COVID-19 severity"
+  text: "Machine-learning classification of SARS-CoV-2 severity from plasma samples using confocal Raman spectroscopy."
+  meta: "Journal of Raman Spectroscopy, 2023"
+  url: "https://doi.org/10.1002/jrs.6461"
+  image: "/assets/img/raman.png"
